@@ -11,7 +11,7 @@ env:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    # 關鍵考點：綁定已設定防護規則的 production 環
+    # 關鍵考點：綁定已設定防護規則的 production 環境
     environment:
       name: production
       url: ${{ steps.deploy.outputs.url }}
